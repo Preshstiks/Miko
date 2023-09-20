@@ -8,7 +8,7 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 import "@fontsource-variable/cairo";
 const Services = () => {
   return (
-    <Box pt="130px">
+    <Box pt="130px" px="10%">
       <Flex gap={40}>
         <Box>
           <Box>
@@ -18,7 +18,7 @@ const Services = () => {
             <Box w={12} h={1} bgColor="black" borderRadius="full"></Box>
           </Box>
           <Box pt={4}>
-            <Text fontFamily="heading">
+            <Text>
               There are so many feature in our work we provide our customers our
               great service because of that it is our responsibilities of work.
             </Text>
@@ -31,10 +31,10 @@ const Services = () => {
               height={150}
               alt="img"
             />
-            <Box w="30px" h="200px" bgColor="gray.200" borderRadius="50%"></Box>
-            <Box w="30px" h="200px" bgColor="gray.200" borderRadius="50%"></Box>
+            <Box w="50px" h="200px" bgColor="gray.200" borderRadius="50%"></Box>
+            <Box w="50px" h="200px" bgColor="gray.200" borderRadius="50%"></Box>
             <Box
-              w="30px"
+              w="50px"
               h="200px"
               borderColor="gray.200"
               boxShadow="xs"
@@ -54,9 +54,9 @@ const Services = () => {
                 <Icon as={LuCodesandbox} w={8} h={8} color="black" />
               </Box>
               <Box>
-                <Text fontWeight="bold" pb={2} fontSize={25}>
+                <Heading fontWeight="bold" pb={2} fontSize={25}>
                   Brand and Logo Design
-                </Text>
+                </Heading>
                 <Text fontWeight="normal">
                   A brand is a product, service or concept that is publicly
                   distinguished from other products.
@@ -73,9 +73,9 @@ const Services = () => {
                 <Icon as={TbWorld} w={8} h={8} color="black" />
               </Box>
               <Box>
-                <Text fontSize={25} pb={2} fontWeight="semibold">
+                <Heading fontSize={25} pb={2} fontWeight="bold">
                   Web Design
-                </Text>
+                </Heading>
                 <Text fontWeight="normal">
                   Web design refers to the design of websites that are displayed
                   on the internet. It usually refers to the user experience
@@ -93,9 +93,9 @@ const Services = () => {
                 <Icon as={TbBrandTelegram} w={8} h={8} color="black" />
               </Box>
               <Box>
-                <Text fontSize={25} pb={2} fontWeight="semibold">
+                <Heading fontSize={25} pb={2} fontWeight="bold">
                   Digital Marketing
-                </Text>
+                </Heading>
                 <Text fontWeight="normal">
                   Digital Marketing, also called online marketing, is the
                   promotion of brands to connect with potential customers using
@@ -103,7 +103,7 @@ const Services = () => {
                 </Text>
                 <Flex pt={15} alignItems="center">
                   <Link
-                    color="tomato"
+                    color="orange.400"
                     fontSize={16}
                     fontWeight="semibold"
                     href="#"

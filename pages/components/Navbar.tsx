@@ -3,7 +3,7 @@ import { Box, Button, Flex, Link, SimpleGrid, Text } from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
-    <Flex alignItems="center" pt={10} justifyContent="space-between">
+    <Flex px="10%" alignItems="center" pt={10} justifyContent="space-between">
       <Box>
         <Text fontWeight={700} fontSize={32}>
           Miko
@@ -24,7 +24,7 @@ const Navbar = () => {
         </Link>
       </SimpleGrid>
       <Box>
-        <Button px={30} bgColor="tomato">
+        <Button px={30} bgColor="orange.400">
           Contact
         </Button>
       </Box>

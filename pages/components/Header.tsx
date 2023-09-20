@@ -12,7 +12,7 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <Flex alignItems="center" pt="60px">
+    <Flex alignItems="center" px="10%" pt="60px">
       <Box>
         <Heading pb={5} fontSize={60}>
           Creative Design Agency Platorm
@@ -35,7 +35,17 @@ const Header = () => {
           create a project.
         </Text>
         <Flex gap={10}>
-          <Button px={30} variant="outline" colorScheme="red" size="md">
+          <Button
+            px={30}
+            color="black"
+            borderColor="orange.400"
+            backgroundColor="white"
+            borderWidth="1.5px"
+            borderStyle="solid"
+            _hover={{
+              backgroundColor: "orange.400",
+            }}
+          >
             Contact
           </Button>
           <Flex alignItems="center">

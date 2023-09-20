@@ -4,17 +4,19 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Services from "./components/Services";
 import Works from "./components/Works";
+import AboutUs from "./components/About Us";
 export default function Home() {
   return (
     <>
       <Head>
         <title>Landing Page</title>
       </Head>
-      <Box px="10%">
+      <Box>
         <Navbar />
         <Header />
         <Services />
         <Works />
+        <AboutUs />
       </Box>
     </>
   );

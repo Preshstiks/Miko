@@ -17,8 +17,6 @@ const Works = () => {
             position="relative"
             overflow="hidden"
             borderRadius="md"
-            bg="rgba(0, 0, 0, 0.6)" // Initial background color (dark)
-            transition="background-color 0.3s"
             _hover={{
               "&::before": {
                 content: '""',
@@ -50,8 +48,6 @@ const Works = () => {
             position="relative"
             overflow="hidden"
             borderRadius="md"
-            bg="rgba(0, 0, 0, 0.6)" // Initial background color (dark)
-            transition="background-color 0.3s"
             _hover={{
               "&::before": {
                 content: '""',
@@ -83,8 +79,6 @@ const Works = () => {
             position="relative"
             overflow="hidden"
             borderRadius="md"
-            bg="rgba(0, 0, 0, 0.6)" // Initial background color (dark)
-            transition="background-color 0.3s"
             _hover={{
               "&::before": {
                 content: '""',
@@ -116,8 +110,6 @@ const Works = () => {
             position="relative"
             overflow="hidden"
             borderRadius="md"
-            bg="rgba(0, 0, 0, 0.6)" // Initial background color (dark)
-            transition="background-color 0.3s"
             _hover={{
               "&::before": {
                 content: '""',

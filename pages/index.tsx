@@ -3,6 +3,7 @@ import { Box } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Services from "./components/Services";
+import Works from "./components/Works";
 export default function Home() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function Home() {
         <Navbar />
         <Header />
         <Services />
+        <Works />
       </Box>
     </>
   );

@@ -24,7 +24,9 @@ const Navbar = () => {
         </Link>
       </SimpleGrid>
       <Box>
-        <Button bgColor="tomato">Contact</Button>
+        <Button px={30} bgColor="tomato">
+          Contact
+        </Button>
       </Box>
     </Flex>
   );

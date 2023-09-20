@@ -3,6 +3,7 @@ import {
   Button,
   Flex,
   Heading,
+  Icon,
   Image,
   Link,
   Text,
@@ -34,12 +35,14 @@ const Header = () => {
           create a project.
         </Text>
         <Flex gap={10}>
-          <Button variant="outline" colorScheme="red" size="md">
+          <Button px={30} variant="outline" colorScheme="red" size="md">
             Contact
           </Button>
           <Flex alignItems="center">
-            <Link href="#">Portfolio</Link>
-            <BsArrowUpRightCircle />
+            <Link fontWeight="semibold" href="#">
+              Portfolio
+            </Link>
+            <Icon as={BsArrowUpRightCircle} ml={2} w={6} h={6} />
           </Flex>
         </Flex>
       </Box>

@@ -1,40 +1,49 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
-import Image from "next/image";
-import Link from "next/link";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Image,
+  Link,
+  Text,
+} from "@chakra-ui/react";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <div>
+    <Flex alignItems="center" pt="60px">
       <Box>
-        <Text fontSize={60}>Creative Design Agency Platorm</Text>
+        <Heading pb={5} fontSize={60}>
+          Creative Design Agency Platorm
+        </Heading>
         <Image
           src="https://img.freepik.com/free-photo/aerial-view-businessman-using-computer-laptop_53876-24739.jpg?size=626&ext=jpg&ga=GA1.1.578610237.1691769856&semt=sph"
           alt="img"
-          width={450}
-          height={450}
+          w={550}
         />
       </Box>
       <Box>
         <Image
           src="https://img.freepik.com/free-vector/business-analytics-concept-illustration_114360-4224.jpg?w=996&t=st=1695137748~exp=1695138348~hmac=46432cb923241f1b375df0e1eddf1302a73c9a921a8decd0dee31182a45f9bff"
-          width={200}
-          height={200}
+          w={200}
           alt="img"
+          pb="50px"
         />
-        <Text>
+        <Text pb="40px">
           We are solving a digital problem inside of the website and apps also
           create a project.
         </Text>
-        <Box>
-          <Button>Contact</Button>
+        <Flex gap={10}>
+          <Button variant="outline" colorScheme="red" size="md">
+            Contact
+          </Button>
           <Flex alignItems="center">
             <Link href="#">Portfolio</Link>
             <BsArrowUpRightCircle />
           </Flex>
-        </Box>
+        </Flex>
       </Box>
-    </div>
+    </Flex>
   );
 };
 

@@ -7,6 +7,7 @@ import Works from "./components/Works";
 import AboutUs from "./components/About Us";
 import Testimonials from "./components/Testimonials";
 import TrustedCompany from "./components/TrustedCompany";
+import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function Home() {
         <AboutUs />
         <Testimonials />
         <TrustedCompany />
+        <Footer />
       </Box>
     </>
   );

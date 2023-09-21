@@ -2,7 +2,7 @@ import { Box, Heading } from "@chakra-ui/react";
 
 const TrustedCompany = () => {
   return (
-    <Box px="10%" pt="150px">
+    <Box px="10%" py="150px">
       <Heading pb={10}>Trusted our company</Heading>
       <Box display="flex" gap={2}>
         <Box

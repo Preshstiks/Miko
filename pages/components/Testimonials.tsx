@@ -13,63 +13,6 @@ import { useState } from "react";
 import { AnimatePresence, useAnimation } from "framer-motion";
 import { motion } from "framer-motion";
 const Testimonials = () => {
-  const [currentImage, setCurrentImage] = useState(0);
-  const controls = useAnimation();
-
-  const testimonials = [
-    {
-      author: "Markus alina",
-      role: "Content creator",
-      bgColor: "red",
-    },
-    {
-      author: "Amerigo john",
-      role: "Brand designer",
-      bgColor: "blue",
-    },
-    {
-      author: "Phillips anthony",
-      role: "Content creator",
-      bgColor: "yellow",
-    },
-    {
-      author: "Markus alina",
-      role: "Content creator",
-      bgColor: "green",
-    },
-    {
-      author: "Amerigo john",
-      role: "Brand designer",
-      bgColor: "gray",
-    },
-    {
-      author: "Phillips anthony",
-      role: "Content creator",
-      bgColor: "orange",
-    },
-    {
-      author: "Amerigo john",
-      role: "Brand designer",
-      bgColor: "pink",
-    },
-    {
-      author: "Phillips anthony",
-      role: "Content creator",
-      bgColor: "cyan",
-    },
-  ];
-
-  const handleNext = () => {
-    setCurrentImage((currentImage + 1) % testimonials.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentImage(
-      (currentImage - 1 + testimonials.length) % testimonials.length
-    );
-  };
-
-  const currentTestimonial = testimonials[currentImage];
   return (
     <Box px="10%">
       <Box>

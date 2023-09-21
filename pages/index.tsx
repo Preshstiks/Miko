@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import Works from "./components/Works";
 import AboutUs from "./components/About Us";
 import Testimonials from "./components/Testimonials";
+import TrustedCompany from "./components/TrustedCompany";
 export default function Home() {
   return (
     <>
@@ -19,6 +20,7 @@ export default function Home() {
         <Works />
         <AboutUs />
         <Testimonials />
+        <TrustedCompany />
       </Box>
     </>
   );

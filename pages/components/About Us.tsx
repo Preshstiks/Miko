@@ -1,13 +1,15 @@
-import { Box, Button, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 
 const AboutUs = () => {
   return (
-    <Box>
-      <Box>
+    <Box display="flex" px="10%" gap={4}>
+      <Box w="50%">
         <Box>
-          <Heading>Our company is the best all over the world</Heading>
+          <Heading fontWeight="bold" pb={2} fontSize={25}>
+            Our company is the best all over the world
+          </Heading>
         </Box>
-        <Text>
+        <Text fontWeight="normal">
           We are solving a digital problem inside of the websites and apps also
           create a beautiful work project, within a short time we deliver for
           clients.
@@ -26,24 +28,32 @@ const AboutUs = () => {
           About us
         </Button>
       </Box>
-      <Box>
-        <Box>
-          <Heading color="orange.400">10 Years</Heading>
+      <SimpleGrid columns={2} gap={3}>
+        <Box p={8} boxShadow="md" textAlign="center">
+          <Heading color="orange.400" fontSize={25}>
+            10 Years
+          </Heading>
           <Text>Working Experience</Text>
         </Box>
-        <Box>
-          <Heading color="orange.400">140M+</Heading>
+        <Box p={8} boxShadow="md" textAlign="center">
+          <Heading color="orange.400" fontSize={25}>
+            140M+
+          </Heading>
           <Text>Customers all over the world</Text>
         </Box>
-        <Box>
-          <Heading color="orange.400">300+ Clients</Heading>
+        <Box p={8} boxShadow="md" textAlign="center">
+          <Heading color="orange.400" fontSize={25}>
+            300+ Clients
+          </Heading>
           <Text>Completed their works</Text>
         </Box>
-        <Box>
-          <Heading color="orange.400">1000+</Heading>
+        <Box p={8} boxShadow="md" textAlign="center">
+          <Heading color="orange.400" fontSize={25}>
+            1000+
+          </Heading>
           <Text>Satisfied Clients</Text>
         </Box>
-      </Box>
+      </SimpleGrid>
     </Box>
   );
 };

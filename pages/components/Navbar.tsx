@@ -24,7 +24,14 @@ const Navbar = () => {
         </Link>
       </SimpleGrid>
       <Box>
-        <Button px={30} bgColor="orange.400">
+        <Button
+          _hover={{
+            backgroundColor: "orange.300",
+          }}
+          px={30}
+          color="white"
+          bgColor="orange.400"
+        >
           Contact
         </Button>
       </Box>

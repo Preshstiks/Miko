@@ -6,7 +6,8 @@ import { extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
   fonts: {
     heading: `'Cairo Variable', sans-serif`,
-    body: `'Roboto', sans-serif`,
+    // body: `'Roboto', sans-serif`,
+    body: `'Cairo Variable', sans-serif`,
   },
 });
 export default function App({ Component, pageProps }: AppProps) {

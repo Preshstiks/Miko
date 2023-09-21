@@ -2,14 +2,14 @@ import { Box, Button, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 
 const AboutUs = () => {
   return (
-    <Box display="flex" px="10%" gap={4}>
+    <Box display="flex" px="10%" py="150px" gap={10}>
       <Box w="50%">
         <Box>
           <Heading fontWeight="bold" pb={2} fontSize={25}>
             Our company is the best all over the world
           </Heading>
         </Box>
-        <Text fontWeight="normal">
+        <Text pb={10} fontWeight="normal">
           We are solving a digital problem inside of the websites and apps also
           create a beautiful work project, within a short time we deliver for
           clients.
@@ -22,7 +22,7 @@ const AboutUs = () => {
           borderStyle="solid"
           backgroundColor="white"
           _hover={{
-            backgroundColor: "orange.400",
+            backgroundColor: "gray.100",
           }}
         >
           About us

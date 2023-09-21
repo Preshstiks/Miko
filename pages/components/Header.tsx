@@ -34,7 +34,7 @@ const Header = () => {
           We are solving a digital problem inside of the website and apps also
           create a project.
         </Text>
-        <Flex gap={10}>
+        <Box>
           <Button
             px={30}
             color="black"
@@ -43,18 +43,12 @@ const Header = () => {
             borderWidth="1.5px"
             borderStyle="solid"
             _hover={{
-              backgroundColor: "orange.400",
+              backgroundColor: "gray.100",
             }}
           >
             Contact
           </Button>
-          <Flex alignItems="center">
-            <Link fontWeight="semibold" href="#">
-              Portfolio
-            </Link>
-            <Icon as={BsArrowUpRightCircle} ml={2} w={6} h={6} />
-          </Flex>
-        </Flex>
+        </Box>
       </Box>
     </Flex>
   );

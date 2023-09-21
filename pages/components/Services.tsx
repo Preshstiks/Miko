@@ -101,17 +101,6 @@ const Services = () => {
                   promotion of brands to connect with potential customers using
                   the internet.
                 </Text>
-                <Flex pt={15} alignItems="center">
-                  <Link
-                    color="orange.400"
-                    fontSize={16}
-                    fontWeight="semibold"
-                    href="#"
-                  >
-                    View all
-                  </Link>
-                  <Icon as={BsArrowUpRightCircle} ml={2} w={6} h={6} />
-                </Flex>
               </Box>
             </HStack>
           </Box>

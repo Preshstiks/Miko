@@ -150,7 +150,7 @@ const Works = () => {
             borderStyle="solid"
             backgroundColor="white"
             _hover={{
-              backgroundColor: "orange.400",
+              backgroundColor: "gray.100",
             }}
           >
             View more

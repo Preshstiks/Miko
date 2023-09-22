@@ -23,7 +23,7 @@ const Navbar = () => {
           About Us
         </Link>
       </SimpleGrid>
-      <Box>
+      <Box display={{ base: "none", md: "block" }}>
         <Button
           _hover={{
             backgroundColor: "orange.300",

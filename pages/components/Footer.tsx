@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <Box bgColor="blackAlpha.800" px="10%">
       <Box>
+        <Box p="25px"></Box>
         <Box>
-          <Box p="25px"></Box>
           <Box bgColor="gray.200" p="60px" borderRadius="lg">
             <Heading textAlign="center" fontSize={40}>
               Let's build &#38; create
@@ -114,6 +114,17 @@ const Footer = () => {
               <Text>Feature</Text>
             </Box>
           </Box>
+        </Box>
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          pb="40px"
+          fontSize="13px"
+          color="gray.200"
+        >
+          <Text w="50%">design@kahaf, All rights reserved 2023</Text>
+          <Text>Privacy policy</Text>
+          <Text>Terms and conditions</Text>
         </Box>
       </Box>
     </Box>

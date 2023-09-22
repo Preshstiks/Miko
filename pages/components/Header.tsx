@@ -12,7 +12,12 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <Flex alignItems="center" px="10%" pt="60px">
+    <Flex
+      alignItems="center"
+      flexDirection={{ base: "column", md: "row" }}
+      px="10%"
+      pt="60px"
+    >
       <Box>
         <Heading pb={5} fontSize={60}>
           Creative Design Agency Platorm
@@ -29,8 +34,13 @@ const Header = () => {
           w={200}
           alt="img"
           pb="50px"
+          display={{ base: "none", md: "block" }}
         />
-        <Text pb="40px">
+        <Text
+          pb="40px"
+          fontSize={{ base: "25px" }}
+          pt={{ base: "30px", md: "0" }}
+        >
           We are solving a digital problem inside of the website and apps also
           create a project.
         </Text>

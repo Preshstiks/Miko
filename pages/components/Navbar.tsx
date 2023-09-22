@@ -41,7 +41,7 @@ const Navbar = () => {
           About Us
         </Link>
       </SimpleGrid>
-      <Box onClick={handleShow}>
+      <Box onClick={handleShow} display={{ base: "block", md: "none" }}>
         {showMenu ? (
           <Icon
             as={AiOutlinePlus}

@@ -6,6 +6,7 @@ import {
   Icon,
   Image,
   Link,
+  Spacer,
   Text,
 } from "@chakra-ui/react";
 import { BsArrowUpRightCircle } from "react-icons/bs";
@@ -17,6 +18,7 @@ const Header = () => {
       flexDirection={{ base: "column", md: "row" }}
       px="10%"
       pt="60px"
+      gap={7}
     >
       <Box>
         <Heading pb={5} fontSize={60}>

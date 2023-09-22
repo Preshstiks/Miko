@@ -4,7 +4,7 @@ const TrustedCompany = () => {
   return (
     <Box px="10%" py="150px">
       <Heading pb={10}>Trusted our company</Heading>
-      <SimpleGrid columns={[1, 2, 6]} justifyContent="center" spacing={3}>
+      <SimpleGrid columns={[1, 2, 6]} justifyItems="center" spacing={3}>
         <Box
           p={7}
           style={{

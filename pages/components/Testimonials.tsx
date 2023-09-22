@@ -1,17 +1,6 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Icon,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Icon, Text } from "@chakra-ui/react";
 import { BsQuote } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
-import { useState } from "react";
-import { AnimatePresence, useAnimation } from "framer-motion";
-import { motion } from "framer-motion";
 const Testimonials = () => {
   return (
     <Box px="10%">
@@ -19,7 +8,7 @@ const Testimonials = () => {
         <Heading textAlign="center" pb={20}>
           What says people
         </Heading>
-        <Flex gap={5}>
+        <Flex gap={5} flexDirection={{ base: "column", md: "row" }}>
           <Box borderColor="gray.600" boxShadow="xs" p="20px">
             <Icon as={BsQuote} w={8} h={8} />
             <Text>
@@ -34,15 +23,40 @@ const Testimonials = () => {
               pt={5}
             >
               <Box>
-                <Heading fontSize={20}>Markus alina</Heading>
-                <Text>Content creator</Text>
+                <Heading fontSize={{ base: 18, md: 20 }}>Markus alina</Heading>
+                <Text fontSize={{ base: 14, md: 20 }}>Content creator</Text>
               </Box>
               <Box>
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
               </Box>
             </Box>
           </Box>
@@ -60,15 +74,40 @@ const Testimonials = () => {
               pt={5}
             >
               <Box>
-                <Heading fontSize={20}>Amerigo john</Heading>
-                <Text>Brand designer</Text>
+                <Heading fontSize={{ base: 18, md: 20 }}>Amerigo john</Heading>
+                <Text fontSize={{ base: 14, md: 20 }}>Brand designer</Text>
               </Box>
               <Box>
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
               </Box>
             </Box>
           </Box>
@@ -86,15 +125,42 @@ const Testimonials = () => {
               pt={5}
             >
               <Box>
-                <Heading fontSize={20}>Phillips anthony</Heading>
-                <Text>Content creator</Text>
+                <Heading fontSize={{ base: 18, md: 20 }}>
+                  Phillips anthony
+                </Heading>
+                <Text fontSize={{ base: 14, md: 20 }}>Content creator</Text>
               </Box>
               <Box>
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
-                <Icon as={AiFillStar} color="orange.300" w={5} h={5} />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
+                <Icon
+                  as={AiFillStar}
+                  color="orange.300"
+                  w={{ base: 4, sm: 5 }}
+                  h={{ base: 4, sm: 5 }}
+                />
               </Box>
             </Box>
           </Box>

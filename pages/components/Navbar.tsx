@@ -1,16 +1,7 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Icon,
-  Link,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Icon, SimpleGrid, Link, Text } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { AiOutlinePlus, AiOutlineMenu } from "react-icons/ai";
-// import Link from "next/link";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);

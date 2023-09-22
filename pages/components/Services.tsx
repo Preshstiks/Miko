@@ -9,7 +9,7 @@ import "@fontsource-variable/cairo";
 const Services = () => {
   return (
     <Box pt="130px" px="10%">
-      <Flex gap={40}>
+      <Flex gap={40} flexDirection={{ base: "column", md: "row" }}>
         <Box>
           <Box>
             <Heading pb={4} fontWeight={700} fontSize={30}>

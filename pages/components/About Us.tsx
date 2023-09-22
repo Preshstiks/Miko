@@ -2,8 +2,14 @@ import { Box, Button, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 
 const AboutUs = () => {
   return (
-    <Box display="flex" px="10%" py="150px" gap={10}>
-      <Box w="50%">
+    <Box
+      display="flex"
+      flexDirection={{ base: "column", md: "row" }}
+      px="10%"
+      py="150px"
+      gap={10}
+    >
+      <Box w={{ base: "100%", md: "50%" }}>
         <Box>
           <Heading fontWeight="bold" pb={2} fontSize={25}>
             Our company is the best all over the world

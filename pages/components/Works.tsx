@@ -4,7 +4,9 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
   SimpleGrid,
+  Text,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
@@ -15,12 +17,8 @@ const Works = () => {
         <Heading fontWeight={600} pb="35px" textAlign="center" fontSize={30}>
           Latest work of agency
         </Heading>
-        <SimpleGrid columns={2} spacing={5}>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            initial={{ opacity: 1 }}
-            whileTap={{ scale: 0.95 }}
-          >
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5}>
+          <motion.div initial={{ opacity: 1 }} whileTap={{ scale: 0.95 }}>
             <Box
               position="relative"
               overflow="hidden"
@@ -45,10 +43,33 @@ const Works = () => {
                 w={700}
                 alt="img"
               />
+              <Box
+                className="image-overlay"
+                position="absolute"
+                w="100%"
+                h="100%"
+                top="0"
+                left="0"
+                zIndex="3"
+                color="white"
+                opacity={0}
+                _hover={{
+                  opacity: 1,
+                }}
+                pl={7}
+                pt={7}
+                transition="opacity 0.3s"
+              >
+                <Heading as="h3" fontSize="24px" fontWeight="bold" mb="1rem">
+                  Project 1
+                </Heading>
+                <Text>Description for Project 1</Text>
+                <Link href="https://unsplash.com/">View</Link>
+              </Box>
             </Box>
           </motion.div>
           <motion.div
-            whileHover={{ scale: 1.05 }}
+            // whileHover={{ scale: 1.05 }}
             initial={{ opacity: 1 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -76,13 +97,32 @@ const Works = () => {
                 w={700}
                 alt="img"
               />
+              <Box
+                className="image-overlay"
+                position="absolute"
+                w="100%"
+                h="100%"
+                top="0"
+                left="0"
+                zIndex="3"
+                color="white"
+                opacity={0}
+                _hover={{
+                  opacity: 1,
+                }}
+                pl={7}
+                pt={7}
+                transition="opacity 0.3s"
+              >
+                <Heading as="h3" fontSize="24px" fontWeight="bold" mb="1rem">
+                  Project 2
+                </Heading>
+                <Text>Description for Project 2</Text>
+                <Link href="https://unsplash.com/">View</Link>
+              </Box>
             </Box>
           </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            initial={{ opacity: 1 }}
-            whileTap={{ scale: 0.95 }}
-          >
+          <motion.div initial={{ opacity: 1 }} whileTap={{ scale: 0.95 }}>
             <Box
               position="relative"
               overflow="hidden"
@@ -107,13 +147,32 @@ const Works = () => {
                 w={700}
                 alt="img"
               />
+              <Box
+                className="image-overlay"
+                position="absolute"
+                w="100%"
+                h="100%"
+                top="0"
+                left="0"
+                zIndex="3"
+                color="white"
+                opacity={0}
+                _hover={{
+                  opacity: 1,
+                }}
+                pl={7}
+                pt={7}
+                transition="opacity 0.3s"
+              >
+                <Heading as="h3" fontSize="24px" fontWeight="bold" mb="1rem">
+                  Project 3
+                </Heading>
+                <Text>Description for Project 3</Text>
+                <Link href="https://unsplash.com/">View</Link>
+              </Box>
             </Box>
           </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            initial={{ opacity: 1 }}
-            whileTap={{ scale: 0.95 }}
-          >
+          <motion.div initial={{ opacity: 1 }} whileTap={{ scale: 0.95 }}>
             <Box
               position="relative"
               overflow="hidden"
@@ -138,6 +197,29 @@ const Works = () => {
                 w={700}
                 alt="img"
               />
+              <Box
+                className="image-overlay"
+                position="absolute"
+                w="100%"
+                h="100%"
+                top="0"
+                left="0"
+                zIndex="3"
+                color="white"
+                opacity={0}
+                _hover={{
+                  opacity: 1,
+                }}
+                pl={7}
+                pt={7}
+                transition="opacity 0.3s"
+              >
+                <Heading as="h3" fontSize="24px" fontWeight="bold" mb="1rem">
+                  Project 4
+                </Heading>
+                <Text>Description for Project 4</Text>
+                <Link href="https://unsplash.com/">View</Link>
+              </Box>
             </Box>
           </motion.div>
         </SimpleGrid>

@@ -38,7 +38,7 @@ const Navbar = () => {
       display="flex"
       px="10%"
       alignItems="center"
-      py={10}
+      py={5}
       justifyContent="space-between"
       position="fixed"
       top="0"

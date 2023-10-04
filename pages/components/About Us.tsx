@@ -3,6 +3,7 @@ import { Box, Button, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 const AboutUs = () => {
   return (
     <Box
+      id={"about"}
       display="flex"
       flexDirection={{ base: "column", md: "row" }}
       px="10%"

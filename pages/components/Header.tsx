@@ -14,10 +14,11 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 const Header = () => {
   return (
     <Flex
+      id={"home"}
       alignItems="center"
       flexDirection={{ base: "column", md: "row" }}
       px="10%"
-      pt="60px"
+      pt="150px"
       gap={7}
     >
       <Box>

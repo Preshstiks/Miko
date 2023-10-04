@@ -1,22 +1,53 @@
-import { Box, Button, Icon, SimpleGrid, Link, Text } from "@chakra-ui/react";
+import React, { useState } from "react";
+import { Box, Text, SimpleGrid, Link, Button, Icon } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
 import { AiOutlinePlus, AiOutlineMenu } from "react-icons/ai";
+import { Link as ScrollLink } from "react-scroll";
+import { useRouter } from "next/router";
+
+const routes = [
+  {
+    link: "home",
+    text: "Home",
+  },
+  {
+    link: "services",
+    text: "Services",
+  },
+  {
+    link: "work",
+    text: "Work",
+  },
+  {
+    link: "about",
+    text: "About Us",
+  },
+  // You can add more routes here
+];
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const { pathname } = useRouter();
+
   const handleShow = () => {
     setShowMenu(!showMenu);
   };
+
   return (
     <Box
-      // display={{ md: "flex", base: "block" }}
       display="flex"
       px="10%"
       alignItems="center"
-      position="relative"
-      pt={10}
+      py={10}
       justifyContent="space-between"
+      position="fixed"
+      top="0"
+      left="0"
+      right="0"
+      zIndex="1000"
+      bgColor="white"
+      borderColor="gray.600"
+      boxShadow="xs"
     >
       <Box>
         <Text fontWeight={700} fontSize={32}>
@@ -28,18 +59,32 @@ const Navbar = () => {
         columns={4}
         spacing={2}
       >
-        <Link px={4} py={3} href="#">
-          Home
-        </Link>
-        <Link px={4} py={3} href="#">
-          Services
-        </Link>
-        <Link px={4} py={3} href="#">
-          Work
-        </Link>
-        <Link px={4} py={3} href="#">
-          About Us
-        </Link>
+        {routes.map((item, index) => (
+          <ScrollLink
+            key={index}
+            to={item.link}
+            spy={true}
+            smooth={true}
+            offset={item.link === "jobs" ? -40 : 0}
+            duration={500}
+            activeClass="active"
+            style={{
+              paddingLeft: "10px",
+              paddingRight: "10px",
+              paddingTop: "8px",
+              paddingBottom: "10px",
+              cursor: "pointer",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.textDecoration = "underline";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.textDecoration = "none";
+            }}
+          >
+            {item.text}
+          </ScrollLink>
+        ))}
       </SimpleGrid>
       <Box onClick={handleShow} display={{ base: "block", md: "none" }}>
         {showMenu ? (
@@ -77,25 +122,37 @@ const Navbar = () => {
               w="100%"
               bgColor="orange.400"
             >
-              <Box px={4} py={3} textAlign="center">
-                <Link href="#">Home</Link>
-              </Box>
-              <Box px={4} py={3} textAlign="center">
-                <Link href="#">Services</Link>
-              </Box>
-              <Box px={4} py={3} textAlign="center">
-                <Link href="#">Work</Link>
-              </Box>
-              <Box px={4} py={3} textAlign="center">
-                <Link href="#">About us</Link>
-              </Box>
+              {routes.map((item, index) => (
+                <Box key={index} px={4} py={3} textAlign="center">
+                  <ScrollLink
+                    to={item.link}
+                    spy={true}
+                    smooth={true}
+                    offset={item.link === "jobs" ? -40 : 0}
+                    duration={500}
+                    activeClass="active"
+                    style={{
+                      paddingLeft: "10px",
+                      paddingRight: "10px",
+                      paddingTop: "8px",
+                      paddingBottom: "10px",
+                      cursor: "pointer",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.textDecoration = "underline";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.textDecoration = "none";
+                    }}
+                  >
+                    {item.text}
+                  </ScrollLink>
+                </Box>
+              ))}
             </Box>
           </motion.div>
         )}
       </AnimatePresence>
-      {/* <Box>
-       
-      </Box> */}
       <Box display={{ base: "none", md: "block" }}>
         <Button
           _hover={{

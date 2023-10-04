@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const Works = () => {
   return (
-    <Box py="100px" bgColor="orange.50">
+    <Box id={"work"} py="100px" bgColor="orange.50">
       <Box px="10%">
         <Heading fontWeight={600} pb="35px" textAlign="center" fontSize={30}>
           Latest work of agency

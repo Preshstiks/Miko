@@ -8,7 +8,7 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 import "@fontsource-variable/cairo";
 const Services = () => {
   return (
-    <Box pt="130px" px="10%">
+    <Box id={"services"} pt="130px" px="10%">
       <Flex gap={40} flexDirection={{ base: "column", md: "row" }}>
         <Box>
           <Box>

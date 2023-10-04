@@ -40,7 +40,7 @@ const Header = () => {
         />
         <Text
           pb="40px"
-          fontSize={{ base: "25px" }}
+          fontSize={{ base: "25px", md: "20px" }}
           pt={{ base: "30px", md: "0" }}
         >
           We are solving a digital problem inside of the website and apps also
